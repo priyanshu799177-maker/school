@@ -1,0 +1,732 @@
+﻿/* ===========================================
+   S.K.L PUBLIC SCHOOL
+   Professional CSS - Part 2A
+=========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.6;
+}
+
+/* HEADER */
+
+header{
+    width:100%;
+    background:#004aad;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+/* LOGO */
+
+.logo{
+    display:flex;
+    align-items:center;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    background:white;
+    margin-right:15px;
+}
+
+.logo h1{
+    font-size:28px;
+}
+
+.logo p{
+    font-size:14px;
+    color:#f0f0f0;
+}
+
+/* NAVIGATION */
+
+nav ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+nav ul li{
+    margin-left:18px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    padding:8px 14px;
+    border-radius:6px;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    background:white;
+    color:#004aad;
+}
+
+/* HERO SECTION */
+
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:60px;
+    background:linear-gradient(to right,#004aad,#0088ff);
+    color:white;
+}
+
+.hero-text{
+    flex:1;
+    min-width:300px;
+    padding:20px;
+}
+
+.hero-text h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,.35);
+}
+
+/* BUTTON */
+
+.btn{
+    display:inline-block;
+    padding:14px 28px;
+    background:#ff9800;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-size:18px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#e68900;
+    transform:translateY(-3px);
+}
+
+/* SECTION */
+
+section{
+    padding:60px 30px;
+}
+
+/* TITLE */
+
+section h2{
+    text-align:center;
+    color:#004aad;
+    font-size:34px;
+    margin-bottom:30px;
+}
+
+/* INFORMATION */
+
+.info-box{
+    width:90%;
+    max-width:900px;
+    margin:auto;
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.info-box p{
+    font-size:18px;
+    margin-bottom:15px;
+}
+/* ===========================================
+   PROFESSIONAL CSS - PART 2B
+   Statistics, Cards, Principal, Notice, Gallery
+=========================================== */
+
+/* STATISTICS */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    padding:50px;
+    background:#eef5ff;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 20px rgba(0,0,0,.20);
+}
+
+.card h2{
+    color:#004aad;
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:18px;
+    color:#555;
+}
+
+/* PRINCIPAL */
+
+.principal{
+    background:white;
+    width:90%;
+    max-width:1000px;
+    margin:50px auto;
+    padding:35px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+}
+
+.principal h2{
+    text-align:center;
+    color:#004aad;
+    margin-bottom:20px;
+}
+
+.principal p{
+    font-size:18px;
+    text-align:justify;
+    line-height:1.8;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    padding:40px;
+}
+
+.feature-box{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 12px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.feature-box:hover{
+    background:#004aad;
+    color:white;
+    transform:scale(1.03);
+}
+
+.feature-box h3{
+    margin-bottom:15px;
+}
+
+/* NOTICE */
+
+.notice-board{
+    background:#fff7d6;
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    padding:30px;
+    border-left:8px solid orange;
+    border-radius:10px;
+}
+
+.notice-board h2{
+    color:#d35400;
+    margin-bottom:20px;
+}
+
+.notice-board ul{
+    padding-left:25px;
+}
+
+.notice-board li{
+    margin:12px 0;
+    font-size:17px;
+}
+
+/* GALLERY */
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+    padding:40px;
+}
+
+.gallery img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+/* TABLE */
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table th{
+    background:#004aad;
+    color:white;
+    padding:12px;
+}
+
+table td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
+}
+
+/* FORM */
+
+form{
+    background:white;
+    width:90%;
+    max-width:700px;
+    margin:auto;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+input,
+select,
+textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:6px;
+    font-size:16px;
+}
+
+button{
+    background:#004aad;
+    color:white;
+    padding:12px 25px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#002d73;
+}
+/* ===========================================
+   PROFESSIONAL CSS - PART 2C
+   Footer, Responsive, Animations, Utilities
+=========================================== */
+
+/* FOOTER */
+
+footer{
+    background:#002147;
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+    margin-top:40px;
+}
+
+footer p{
+    margin:8px 0;
+    font-size:16px;
+}
+
+footer a{
+    color:#ffcc00;
+    text-decoration:none;
+}
+
+footer a:hover{
+    text-decoration:underline;
+}
+
+/* SECTION ANIMATION */
+
+.hero,
+.info,
+.stats,
+.principal{
+    animation:fadeUp 1s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* IMAGE HOVER */
+
+img{
+    transition:.4s;
+}
+
+img:hover{
+    transform:scale(1.03);
+}
+
+/* SCROLLBAR */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#eeeeee;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#004aad;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#002d73;
+}
+
+/* SELECTION */
+
+::selection{
+    background:#004aad;
+    color:white;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+header{
+
+flex-direction:column;
+
+padding:20px;
+
+}
+
+nav ul{
+
+justify-content:center;
+
+margin-top:15px;
+
+}
+
+.hero{
+
+flex-direction:column;
+
+text-align:center;
+
+padding:40px 20px;
+
+}
+
+.hero-text h2{
+
+font-size:32px;
+
+}
+
+.hero-image{
+
+margin-top:25px;
+
+}
+
+.stats{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+.logo{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.logo img{
+
+margin-bottom:10px;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+nav ul li{
+
+margin:8px 0;
+
+}
+
+.hero-text h2{
+
+font-size:28px;
+
+}
+
+.hero-text p{
+
+font-size:16px;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.card{
+
+padding:20px;
+
+}
+
+.info-box{
+
+padding:20px;
+
+}
+
+.principal{
+
+padding:20px;
+
+}
+
+section{
+
+padding:40px 15px;
+
+}
+
+}
+
+/* SMALL MOBILE */
+
+@media(max-width:480px){
+
+.logo h1{
+
+font-size:22px;
+
+}
+
+.hero-text h2{
+
+font-size:24px;
+
+}
+
+.btn{
+
+display:block;
+
+width:100%;
+
+text-align:center;
+
+}
+
+.info-box p{
+
+font-size:15px;
+
+}
+
+footer{
+
+font-size:14px;
+
+}
+
+}
+
+/* SHADOW */
+
+.shadow{
+
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+/* ROUNDED */
+
+.round{
+
+border-radius:15px;
+
+}
+
+/* TEXT */
+
+.text-center{
+
+text-align:center;
+
+}
+
+.text-blue{
+
+color:#004aad;
+
+}
+
+/* BACKGROUND */
+
+.bg-light{
+
+background:#f5f7fb;
+
+}
+
+.bg-blue{
+
+background:#004aad;
+
+color:white;
+
+}
+
+/* MARGIN */
+
+.mt-20{
+
+margin-top:20px;
+
+}
+
+.mt-40{
+
+margin-top:40px;
+
+}
+
+.mb-20{
+
+margin-bottom:20px;
+
+}
+
+.mb-40{
+
+margin-bottom:40px;
+
+}
+
+/* PADDING */
+
+.p-20{
+
+padding:20px;
+
+}
+
+.p-40{
+
+padding:40px;
+
+}
+.dark-mode{
+    background:#111;
+    color:white;
+}
+
+.dark-mode header{
+    background:#000;
+}
+
+.dark-mode .card,
+.dark-mode .info-box,
+.dark-mode .principal{
+    background:#222;
+    color:white;
+}
+
+.dark-mode footer{
+    background:#000;
+}
